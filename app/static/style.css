@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar a:hover {
+    background-color: #34495e;
+}
+
+/* Header Styles */
+.header {
+    background: url('../static/header-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Page Specific Styles */
+.page-title {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Encode/Decode Styles */
+.encode-decode-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.encode-decode-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.encode-decode-container form {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 16px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .encode-decode-container {
+        flex-direction: column;
+    }
+
+    .encode-decode-container img {
+        margin-bottom: 20px;
+    }
+}
